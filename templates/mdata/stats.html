@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+            <!-- Page content-->
+            <section class="py-5">
+                <div class="container px-5">
+                    <!-- Contact form-->
+                    <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                        <div class="text-center mb-5">
+                            <h1 class="fw-bolder">Help these children</h1>
+                            <p class="lead fw-normal text-muted mb-0">Each of these children are potential human trafficking victims, as they have been reported as missing in Utah recently. If you have any information regarding these people or others, please help us bring them home.</p>
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                                <table>
+                                    <tr>
+                                        <th>Date Missing</th>
+                                        <th>Last Name</th>
+                                        <th>First Name</th>
+                                        <th>Age at Missing</th>
+                                        <th>City</th>
+                                        <th>State</th>
+                                        <th>Gender</th>
+                                        <th>Race</th>
+                                    </tr>
+                                    {% for oPerson in data%}
+                                    <tr>
+                                        <td>{{oPerson.date_missing}}</td>
+                                        <td>{{oPerson.last_name}}</td>
+                                        <td>{{oPerson.first_name}}</td>
+                                        <td>{{oPerson.age_at_missing}}</td>
+                                        <td>{{oPerson.city}}</td>
+                                        <td>{{oPerson.state}}</td>
+                                        <td>{{oPerson.gender}}</td>
+                                        <td>{{oPerson.race}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </table>   
+                        </div>
+                    </div>
+                    <!-- Contact cards-->
+                    <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
+                        <div class="col">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-telephone"></i></div>
+                            <div class="h5 mb-2">Call the National Human Trafficking Hotline</div>
+                            <p class="text-muted mb-0">Call anytime at 1-888-373-7888</p>
+                        </div>
+                        <div class="col">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-people"></i></div>
+                            <div class="h5">Spread the Word</div>
+                            <p class="text-muted mb-0">Help increase the strength of our efforts by <a href="https://www.dhs.gov/blue-campaign/request-materials" target="_blank">sharing materials</a></p>
+                        </div>
+                        <div class="col">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-telephone"></i></div>
+                            <div class="h5">Report Suspected Trafficking</div>
+                            <p class="text-muted mb-0">Call 1-866-347-2423 to file a report</p>
+                        </div>
+                        <div class="col">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-telephone"></i></div>
+                            <div class="h5">Submit an Anonymous Tip</div>
+                            <p class="text-muted mb-0">Visit <a href="https://report.cybertip.org/" target="_blank">cybertip.org</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+{% endblock %}

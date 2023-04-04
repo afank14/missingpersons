@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+            <!-- Header-->
+            <header class="py-5">
+                <div class="container px-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-xxl-6">
+                            <div class="text-center my-5">
+                                <h1 class="fw-bolder mb-3">Our mission is to save victims, support survivors, and stop culprits.
+                                <p class="lead fw-normal text-muted mb-4" style="padding-top: 20px;">Want to help? Consider reading on and learning about the warning signs of human trafficking.</p>
+                                <a class="btn btn-primary btn-lg" style="background-color: darkblue; border: darkblue;" href="#scroll-target">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- About section one-->
+            <section class="py-5 bg-light" id="scroll-target">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="{% static 'img/bluecampaign.jpg' %}" alt="Homeland Security - Blue Campaign" /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder">Blue Campaign - Homeland Security</h2>
+                            <p class="lead fw-normal text-muted mb-0">Blue Campaign is a national public awareness campaign designed to educate the public, law enforcement, and other industry partners to recognize the indicators of human trafficking, and how to appropriately respond to possible cases. Homeland Security has resources for all to learn about human trafficking and discover what they can do to help. Visit <a href="https://www.dhs.gov/blue-campaign" target="_blank">Homeland Security's Website</a> for more information.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About section two-->
+            <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="{% static 'img/children.jpg' %}" alt="Happy Children" /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder">Making the World a Better Place</h2>
+                            <p class="lead fw-normal text-muted mb-0">The efforts we make now will not only help the victims of today, but will create a safe world for generations to come.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Team members section-->
+            <section class="py-5 bg-light">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="fw-bolder">Our team</h2>
+                        <p class="lead fw-normal text-muted mb-5">Dedicated to superior service and quality</p>
+                    </div>
+                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/alex.jpg' %}" alt="Alex Fankhauser" />
+                                <h5 class="fw-bolder">Alex Fankhauser</h5>
+                                <div class="fst-italic text-muted">Student</div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/mo.jpg' %}" alt="Marcus Galbraith" />
+                                <h5 class="fw-bolder">Marcus (Mo) Galbraith</h5>
+                                <div class="fst-italic text-muted">Student</div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 mb-5 mb-sm-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/noah.jpg' %}" alt="Noah Haskett" />
+                                <h5 class="fw-bolder">Noah Haskett</h5>
+                                <div class="fst-italic text-muted">Student</div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/naylor.jpg' %}" alt="Adam Naylor" />
+                                <h5 class="fw-bolder">Adam Naylor</h5>
+                                <div class="fst-italic text-muted">Student</div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/jesse.jpg' %}" alt="Jesse Ritter" />
+                                <h5 class="fw-bolder">Jesse Ritter</h5>
+                                <div class="fst-italic text-muted">Student</div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/ryan.jpeg' %}" alt="Ryan Tetro" />
+                                <h5 class="fw-bolder">Ryan Tetro</h5>
+                                <div class="fst-italic text-muted">Student</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+{% endblock %}
