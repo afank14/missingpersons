@@ -21,6 +21,7 @@
                                         <th>State</th>
                                         <th>Gender</th>
                                         <th>Race</th>
+                                        <th>See More</th>
                                     </tr>
                                     {% for oPerson in data%}
                                     <tr>
@@ -32,6 +33,7 @@
                                         <td>{{oPerson.state}}</td>
                                         <td>{{oPerson.gender}}</td>
                                         <td>{{oPerson.race}}</td>
+                                        <td><a href="{% url 'displayPerson' id=oPerson.id %}">Details</a></td>
                                     </tr>
                                     {% endfor %}
                                 </table>   

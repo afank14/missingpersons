@@ -77,10 +77,14 @@ WSGI_APPLICATION = 'mp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'missingpersons',
+    'USER': 'postgres',
+    'PASSWORD': 'D@2322996',
+    'HOST': 'localhost'
     }
-}
+}                
+            
 
 
 # Password validation
