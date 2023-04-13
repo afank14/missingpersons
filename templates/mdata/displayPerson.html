@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+            <!-- Page Content-->
+            <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <h1 class="fw-bolder">{{data.first_name}} {{data.last_name}}</h1>
+                                <p class="lead fw-normal text-muted mb-0">{{data.first_name}} went missing on {{data.date_missing}}.
+                                    {% if data.gender == 'M' %}
+                                        He
+                                    {% else %}
+                                        She
+                                    {% endif %}
+                                     was only {{data.age_at_missing}} when reported missing. 
+                                    {% if data.gender == 'M' %}
+                                     He
+                                    {% else %}
+                                     She
+                                    {% endif %}
+                                     is from {{data.city}}, {{data.state}}. Please call 1-888-373-7888 if you have any information regarding the whereabouts of {{data.first_name}}.
+                                    Together we can reunite
+                                    {% if data.gender == 'M' %}
+                                    him
+                                    {% else %}
+                                    her
+                                    {% endif %}
+                                    with
+                                    {% if data.gender == 'M' %}
+                                    his
+                                    {% else %}
+                                    her
+                                    {% endif %} family.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-5">
+                        <div class="col-lg-6"><img class="rounded-3 mb-5" src="{% static 'img/outlineperson.png' %}" title="Most Recent Photo of {{data.first_name}}"/></div>
+                        <div class="col-lg-6">
+                            <br><br><br><br><br><br><br>
+                            <p style="text-decoration-line: underline;">Extended Information</p>
+                            <form>
+                                <label>First Name</label>
+                                <input type="text" value="{{data.first_name}}">
+                                <br><br>
+                                <label>Last Name</label>
+                                <input type="text" value="{{data.last_name}}">
+                                <br><br>
+                                <label>Date Missing</label>
+                                <input type="text" value="{{data.date_missing}}">
+                                <br><br>
+                                <label>Age when reported Missing</label>
+                                <input type="text" value="{{data.age_at_missing}}">
+                                <br><br>
+                                <label>Hometown</label>
+                                <input type="text" value="{{data.city}}, {{data.state}}">
+                                <br><br>
+                                <label>Gender</label>
+                                <input type="text" value="{{data.gender}}">
+                                <br><br>
+                                <label>Race</label>
+                                <input type="text" value="{{data.race}}">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <a class="text-decoration-none" href="{% url 'stats' %}">
+                                    Back to Table
+                                    <i class="bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+{% endblock %}
