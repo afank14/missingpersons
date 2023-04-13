@@ -7,7 +7,7 @@
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder text-white mb-2" style="text-align: left;">Join the fight against human trafficking</h1>
+                                <h1 class="display-5 fw-bolder text-white mb-2" style="text-align: left;">Join the fight against Human Trafficking</h1>
                                 <p class="lead fw-normal text-white-50 mb-4">Human trafficking occurs everywhere, even in your community. Use our resources to educate yourself about the problem and join us as we combat it. Together we can save our friends and family from this plague.</p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
                                     <a class="btn btn-primary btn-lg px-4 me-sm-3" style="background-color: darkblue; border: darkblue;" href="#introduction">Get Started</a>
@@ -60,7 +60,7 @@
                             <div class="text-center">
                                 <div class="fs-4 mb-4 fst-italic">"We can change the world and make it a better place. It is in our hands to make a difference."</div>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <img class="rounded-circle me-3" style="height: 40px;" src="{% static 'img/mandela.jpg' %}" alt="Lil' Mandela Face" />
+                                    <img class="rounded-circle me-3" style="height: 40px;" src="{% static 'img/mandela.jpg' %}" alt="Nelson Mandela" />
                                     <div class="fw-bold">
                                         Nelson Mandela
                                     </div>
@@ -70,57 +70,80 @@
                     </div>
                 </div>
             </div>
- <!-- Team members section-->
- <section class="py-5">
+
+<!--Facts about Human Trafficking-->
+<section class="py-5" id="introduction">
     <div class="container px-5 my-5">
-        <div class="text-center">
-            <h2 class="fw-bolder">Our team</h2>
-            <p class="lead fw-normal text-muted mb-5">Dedicated to superior service and quality</p>
-        </div>
-        <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
-            <div class="col mb-5 mb-5 mb-xl-0">
-                <div class="text-center">
-                    <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/alex.jpg' %}" alt="Alex Fankhauser" />
-                    <h5 class="fw-bolder">Alex Fankhauser</h5>
-                    <div class="fst-italic text-muted">Student</div>
-                </div>
-            </div>
-            <div class="col mb-5 mb-5 mb-xl-0">
-                <div class="text-center">
-                    <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/mo.jpg' %}" alt="Marcus Galbraith" />
-                    <h5 class="fw-bolder">Marcus (Mo) Galbraith</h5>
-                    <div class="fst-italic text-muted">Student</div>
-                </div>
-            </div>
-            <div class="col mb-5 mb-5 mb-sm-0">
-                <div class="text-center">
-                    <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/noah.jpg' %}" alt="Noah Haskett" />
-                    <h5 class="fw-bolder">Noah Haskett</h5>
-                    <div class="fst-italic text-muted">Student</div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="text-center">
-                    <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/naylor.jpg' %}" alt="Adam Naylor" />
-                    <h5 class="fw-bolder">Adam Naylor</h5>
-                    <div class="fst-italic text-muted">Student</div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="text-center">
-                    <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/jesse.jpg' %}" alt="Jesse Ritter" />
-                    <h5 class="fw-bolder">Jesse Ritter</h5>
-                    <div class="fst-italic text-muted">Student</div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="text-center">
-                    <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/ryan.jpeg' %}" alt="Ryan Tetro" />
-                    <h5 class="fw-bolder">Ryan Tetro</h5>
-                    <div class="fst-italic text-muted">Student</div>
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Human Trafficking in the United States</h2></div>
+            <div class="col-lg-8">
+                <div class="row gx-5 row-cols-1 row-cols-md-2">
+                    <div class="col mb-5 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-question-circle"></i></div>
+                        <h2 class="h5">How many people are affected in the United States?</h2>
+                        <p class="mb-0">In 2021, 10,359 situations of human trafficking were reported to the U.S. National Human Trafficking Hotline involving 16,554 individual victims.</p>
+                    </div>
+                    <div class="col mb-5 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-question-circle"></i></div>
+                        <h2 class="h5">Who are all the victims?</h2>
+                        <p class="mb-0">Out of all the victims, 64% are unknown, 28% are known minors and 9% are adults.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+ <!-- Team members section-->
+    <section class="py-5 bg-light">
+        <div class="container px-5 my-5">
+            <div class="text-center">
+                <h2 class="fw-bolder">Our team</h2>
+                <p class="lead fw-normal text-muted mb-5">Dedicated to combat trafficking in our community</p>
+            </div>
+            <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5 mb-5 mb-xl-0">
+                    <div class="text-center">
+                        <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/alex.jpg' %}" alt="Alex Fankhauser" />
+                        <h5 class="fw-bolder">Alex Fankhauser</h5>
+                        <div class="fst-italic text-muted">Student</div>
+                    </div>
+                </div>
+                <div class="col mb-5 mb-5 mb-xl-0">
+                    <div class="text-center">
+                        <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/mo.jpg' %}" alt="Marcus Galbraith" />
+                        <h5 class="fw-bolder">Marcus (Mo) Galbraith</h5>
+                        <div class="fst-italic text-muted">Student</div>
+                    </div>
+                </div>
+                <div class="col mb-5 mb-5 mb-sm-0">
+                    <div class="text-center">
+                        <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/noah.jpg' %}" alt="Noah Haskett" />
+                        <h5 class="fw-bolder">Noah Haskett</h5>
+                        <div class="fst-italic text-muted">Student</div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="text-center">
+                        <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/naylor.jpg' %}" alt="Adam Naylor" />
+                        <h5 class="fw-bolder">Adam Naylor</h5>
+                        <div class="fst-italic text-muted">Student</div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="text-center">
+                        <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/jesse.jpg' %}" alt="Jesse Ritter" />
+                        <h5 class="fw-bolder">Jesse Ritter</h5>
+                        <div class="fst-italic text-muted">Student</div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="text-center">
+                        <img class="img-fluid rounded-circle mb-4 px-4" style="height: 200px;" src="{% static 'img/ryan.jpeg' %}" alt="Ryan Tetro" />
+                        <h5 class="fw-bolder">Ryan Tetro</h5>
+                        <div class="fst-italic text-muted">Student</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
