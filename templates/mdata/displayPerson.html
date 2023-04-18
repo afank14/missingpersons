@@ -10,17 +10,14 @@
                                 <h1 class="fw-bolder">{{data.first_name}} {{data.last_name}}</h1>
                                 <p class="lead fw-normal text-muted mb-0">{{data.first_name}} went missing on {{data.date_missing}}.
                                     {% if data.gender == 'M' %}
-                                        He
-                                    {% else %}
-                                        She
-                                    {% endif %}
-                                     was only {{data.age_at_missing}} when reported missing. 
-                                    {% if data.gender == 'M' %}
                                      He
                                     {% else %}
                                      She
                                     {% endif %}
-                                     is from {{data.city}}, {{data.state}}. Please call 1-888-373-7888 if you have any information regarding the whereabouts of {{data.first_name}}.
+                                     is from {{data.city}}, {{data.state}}, and
+                                    was only {{data.age_at_missing}} when reported missing.
+                                    <br><br> 
+                                    Please call 1-888-373-7888 if you have any information regarding the whereabouts of {{data.first_name}}.
                                     Together we can reunite
                                     {% if data.gender == 'M' %}
                                     him
